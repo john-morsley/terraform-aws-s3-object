@@ -5,8 +5,7 @@
 #      _| |_| | | | |_) | |_| | |_\__ \
 #     |_____|_| |_| .__/ \__,_|\__|___/
 #                 | |                  
-#                 |_|                  
-#
+#                 |_|
 
 variable "bucket_name" {
   description = "The name of the S3 Bucket to store this object"
@@ -27,4 +26,9 @@ variable "content_type" {
   description = "(Optional) A standard MIME type desribing the format of the content"
   type        = string
   default     = "text/*"
+}
+
+variable "mock_depends_on" {
+  type    = any
+  default = null
 }

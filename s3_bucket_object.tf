@@ -11,10 +11,13 @@
 #          | |__| | |_) | |  __/ (__| |_ 
 #           \____/|_.__/| |\___|\___|\__|
 #                      _/ |              
-#                     |__/               
-#
+#                     |__/
 
 resource "aws_s3_bucket_object" "this" {
+
+  depends_on = [
+    var.mock_depends_on
+  ]
   
   bucket  = var.bucket_name
   key     = var.key
