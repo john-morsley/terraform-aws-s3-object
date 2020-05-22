@@ -18,7 +18,7 @@ module "s3_object" {
   source = "./../../../terraform-aws-s3-object"
   #source = "john-morsley/terraform-aws-s3-object"
 
-  bucket_name = module.s3_bucket.bucket_name
+  bucket_name = module.s3_bucket.name
 
   key     = "Greeting"
   content = "Hello, AWS! :)"
