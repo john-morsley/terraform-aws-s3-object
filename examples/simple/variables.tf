@@ -5,9 +5,14 @@
 #      \  / (_| | |  | | (_| | |_) | |  __/\__ \
 #       \/ \__,_|_|  |_|\__,_|_.__/|_|\___||___/
 
-variable "access_key" {}
-variable "secret_key" {}
+variable "bucket_name" {
+  type = string
+}
 
-variable "region" {
-  default = "eu-west-2" # London
+variable "key" {
+  type = string
+}
+
+variable "content" {
+  type = string
 }

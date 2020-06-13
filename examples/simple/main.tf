@@ -20,11 +20,7 @@ module "s3_object" {
 
   bucket_name = module.s3_bucket.name
 
-  key     = "Greeting"
-  content = "Hello, AWS! :)"
- 
-//  mock_depends_on = [
-//    module.s3_bucket.id
-//  ]
+  key     = var.key
+  content = var.content
   
 }
