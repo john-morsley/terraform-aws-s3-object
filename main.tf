@@ -1,4 +1,4 @@
-﻿#       _____   ____    ____             _        _   
+#       _____   ____    ____             _        _   
 #      / ____| |___ \  |  _ \           | |      | |  
 #     | (___     __) | | |_) |_   _  ___| | _____| |_ 
 #      \___ \   |__ <  |  _ <| | | |/ __| |/ / _ \ __|
@@ -16,12 +16,12 @@
 resource "aws_s3_bucket_object" "this" {
 
   depends_on = [
-    var.mock_depends_on
+    
   ]
-  
-  bucket  = var.bucket_name
-  key     = var.key
-  content = var.content
+
+  bucket       = var.bucket_name
+  key          = var.key
+  content      = var.content
   content_type = var.content_type
 
 }

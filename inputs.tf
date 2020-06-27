@@ -1,4 +1,4 @@
-﻿#      _____                   _       
+#      _____                   _       
 #     |_   _|                 | |      
 #       | |  _ __  _ __  _   _| |_ ___ 
 #       | | | '_ \| '_ \| | | | __/ __|
@@ -26,9 +26,4 @@ variable "content_type" {
   description = "(Optional) A standard MIME type desribing the format of the content"
   type        = string
   default     = "text/*"
-}
-
-variable "mock_depends_on" {
-  type    = any
-  default = null
 }

@@ -23,5 +23,5 @@ output "s3_bucket_name" {
 
 output "s3_object_id" {
   description = "The ID of the S3 Object"
-  value       = module.s3_object.
+  value       = module.s3_object.id
 }

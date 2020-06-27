@@ -14,7 +14,7 @@
 #                     |__/
 
 module "s3_object" {
-  
+
   source = "./../../../terraform-aws-s3-object"
   #source = "john-morsley/s3-object/aws"
 
@@ -22,5 +22,9 @@ module "s3_object" {
 
   key     = var.key
   content = var.content
-  
+
+  depends_on = [
+    module.s3_bucket
+  ]
+
 }

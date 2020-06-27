@@ -11,5 +11,5 @@ module "s3_bucket" {
   #source = "john-morsley/terraform-aws-bucket"
 
   name = local.bucket_name
-  
+
 }
