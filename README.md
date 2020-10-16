@@ -1,4 +1,4 @@
-﻿# Terraform an Object in an S3 Bucket on AWS 
+# Terraform an Object in an S3 Bucket on AWS 
 
 A Terraform module that creates S3 Objects.
 
