@@ -7,7 +7,7 @@
 
 module "s3_bucket" {
 
-  source = "./../../../terraform-aws-s3-bucket"
+  source = "./../../../terraform-aws-s3-bucket-module"
   #source = "john-morsley/terraform-aws-bucket"
 
   name = local.bucket_name
